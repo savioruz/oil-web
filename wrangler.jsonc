@@ -1,0 +1,32 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "oil-web",
+	"compatibility_date": "2026-08-25",
+	"compatibility_flags": ["nodejs_als"],
+	"pages_build_output_dir": ".svelte-kit/cloudflare",
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"vars": {
+		"PUBLIC_APP_ID": "oil-web",
+		"PUBLIC_API_URL": "http://localhost:8080",
+		"PUBLIC_AUTH_URL": "http://localhost:8787"
+	},
+	"env": {
+		"production": {
+			"vars": {
+				"PUBLIC_APP_ID": "oil-web",
+				"PUBLIC_API_URL": "https://api.example.com",
+				"PUBLIC_AUTH_URL": "https://auth.example.com"
+			}
+		},
+		"preview": {
+			"vars": {
+				"PUBLIC_APP_ID": "oil-web-preview",
+				"PUBLIC_API_URL": "https://api-preview.example.com",
+				"PUBLIC_AUTH_URL": "https://auth-preview.example.com"
+			}
+		}
+	}
+}

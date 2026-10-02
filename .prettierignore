@@ -1,0 +1,8 @@
+.svelte-kit
+.wrangler
+node_modules
+build
+dist
+.env
+.dev.vars
+src/lib/paraglide

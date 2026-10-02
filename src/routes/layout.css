@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn-svelte/tailwind.css';
+@import '@fontsource-variable/inter';
+
+@custom-variant dark (&:is(.dark *));
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+	--background: oklch(1 0 0);
+	--foreground: oklch(0.1448 0 0);
+	--card: oklch(1 0 0);
+	--card-foreground: oklch(0.1448 0 0);
+	--popover: oklch(1 0 0);
+	--popover-foreground: oklch(0.1448 0 0);
+	--primary: oklch(0.2046 0 0);
+	--primary-foreground: oklch(0.9851 0 0);
+	--secondary: oklch(0.9702 0 0);
+	--secondary-foreground: oklch(0.2046 0 0);
+	--muted: oklch(0.9702 0 0);
+	--muted-foreground: oklch(0.5555 0 0);
+	--accent: oklch(0.9702 0 0);
+	--accent-foreground: oklch(0.2046 0 0);
+	--destructive: oklch(0.6496 0.2362 26.9032);
+	--destructive-foreground: oklch(0.9851 0 0);
+	--border: oklch(0.9219 0 0);
+	--input: oklch(0.9219 0 0);
+	--ring: oklch(0.1448 0 0);
+	--radius: 0.5rem;
+	--font-sans:
+		'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+.dark {
+	--background: oklch(0.1448 0 0);
+	--foreground: oklch(0.9851 0 0);
+	--card: oklch(0.1448 0 0);
+	--card-foreground: oklch(0.9851 0 0);
+	--popover: oklch(0.1448 0 0);
+	--popover-foreground: oklch(0.9851 0 0);
+	--primary: oklch(0.9851 0 0);
+	--primary-foreground: oklch(0.2046 0 0);
+	--secondary: oklch(0.2686 0 0);
+	--secondary-foreground: oklch(0.9851 0 0);
+	--muted: oklch(0.2686 0 0);
+	--muted-foreground: oklch(0.7155 0 0);
+	--accent: oklch(0.2686 0 0);
+	--accent-foreground: oklch(0.9851 0 0);
+	--destructive: oklch(0.4205 0.1668 28.5048);
+	--destructive-foreground: oklch(0.9851 0 0);
+	--border: oklch(0.2686 0 0);
+	--input: oklch(0.2686 0 0);
+	--ring: oklch(0.8699 0 0);
+}
